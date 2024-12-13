@@ -2,6 +2,7 @@ import { describe, expect, test } from "vitest";
 import { app } from "../server";
 import supertest from "supertest";
 
+// starte API auf einem Port und bekomme eine Art "fetch" zurück, mit dem wir direkt unsere Routes aufrufen können
 const request = supertest(app);
 
 // TEST SUITE => Tests die zusammengehören => Route Tests
